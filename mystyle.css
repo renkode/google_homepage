@@ -8,6 +8,7 @@ body {
     justify-content: space-between;
     list-style-type: none;
     padding: 10px;
+    font-size: 14px;
 }
 
 #left-nav {
@@ -24,15 +25,45 @@ body {
     flex-wrap: wrap;
     gap: 18px;
     align-items: center;
+    font-size: 13px;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+#app-symbol-bg{
+    background-color: rgb(233, 233, 233, 0);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+#app-symbol-bg:hover {
+    background-color: rgb(233, 233, 233, 1);
+}
+
+#app-link {
+    color: gray;
+}
+
+#app-link:hover {
+    text-decoration: none;
 }
 
 #sign-in{
-    background-color:#2b7de9;
+    background-color:#2B7DE9;
     border: 0px;
     padding: 8px 24px 8px 24px;
     color: white;
     font-size: 14px;
     border-radius: 4px;
+    cursor:pointer;
+}
+
+#sign-in:hover{
+    background-color:#3e8df5;
+    box-shadow: 0px 0px 5px rgba(43, 125, 233, .2);
 }
 
 #search-container {
@@ -43,16 +74,15 @@ body {
     text-align: center;
     position: fixed;
     width: 100%;
-    height: 80%;
-    top: 0%;
+    top: 30%;
 }
 
 #search-bar {
-    height: 40px;
-    width: 50%;
-    border-radius: 20px;
+    height: 44px;
+    width: 60%;
+    border-radius: 22px;
     border: 1px solid rgb(211, 211, 211);
-    margin-top: 10px;
+    margin-top: 28px;
 }
 
 #search-bar:hover {
@@ -60,7 +90,7 @@ body {
 }
 
 #search-bar #search {
-    height: 40px;
+    height: 44px;
     width: 90%;
     border: 0px;
     background: rgba(255,0,255,0);
@@ -87,12 +117,14 @@ body {
 
 .search-button {
     border: 0px;
-    padding: 8px 14px 8px 14px;
+    padding: 8px 16px 8px 16px;
     border-radius: 3px;
-    margin: 5px;
+    margin: 8px 3px 0px 3px;
     border: 1px solid transparent;
     color: rgb(59, 59, 59);
-    background-color:rgb(243, 243, 243);
+    background-color:rgb(248, 248, 248);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .search-button:hover {
@@ -101,7 +133,9 @@ body {
 }
 
 #search-icon {
-    color: gray;
+    padding-left: 4px;
+    font-size: 20px;
+    color: rgb(143, 143, 143);
 }
 
 #footer {
@@ -115,15 +149,18 @@ body {
     list-style-type: none;
     background-color: #F2F2F2;
     padding: 10px;
+    font-size: 14px;
+    flex-wrap: wrap;
 }
+
+
 
 #left-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 24px;
-    align-items: top;
-    padding-top: 4px;
+    align-items: center;
     padding-left: 20px;
 }
 
@@ -132,11 +169,23 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    align-items: top;
-    padding-top: 4px;
-    padding-right: 20px;
+    align-items: center;
+    padding-right: 40px;
 }
 
 .footer-link {
     color: gray;
+}
+
+.footer-link:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
