@@ -3,18 +3,19 @@
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
         <nav id="nav-bar">
-            <li>About</li>
-            <li>Store</li>
-            <li>Gmail</li>
-            <li>Images</li>
-            <li><span class="material-icons-outlined">
+            <li class="nav-link">About</li>
+            <li class="nav-link">Store</li>
+            <li class="nav-link">Gmail</li>
+            <li class="nav-link">Images</li>
+            <li class="nav-link"><span class="material-icons">
                 apps
                 </span>
             </li>
-            <li><button>Sign in</button></li>
+            <li id="sign-in" class="nav-link"><button>Sign in</button></li>
         </nav>
         <!--Google logo-->
         <div id="logo">
@@ -24,6 +25,14 @@
             <form>
                 <input type="search" id="search" name="search">
             </form>
+        </div>
+        <div id="footer">
+            <li class="footer-link">Advertising</li>
+            <li class="footer-link">Business</li>
+            <li class="footer-link">How Search works</li>
+            <li class="footer-link">Privacy</li>
+            <li class="footer-link">Terms</li>
+            <li class="footer-link">Settings</li>
         </div>
     </body>
 </html>
