@@ -28,9 +28,12 @@ body {
     font-size: 13px;
 }
 
+.nav-link {
+    color: #000;
+}
+
 .nav-link:visited {
     text-decoration: none;
-    color: #000;
 }
 
 #app-symbol-bg{
